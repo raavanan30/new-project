@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+
+body{
+    height: 100vh;
+    width: 500%;
+    overflow: hidden;
+
+}
+.pagination{
+    top: 0;
+    position: fixed;
+    right: 0;
+    display: flex;
+}
+.pagination a{
+    letter-spacing: unset;
+    padding: 20px 20px;
+    font-size: 1rem;
+}
+.wrapper{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.section{
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    transform: translateX(0);
+    transition: transform 0.7s ease-in-out;
+}
+
+img{
+  max-width: 100%;
+}
+
+.container-all{
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.slide{
+  display: flex;
+  transform: translate3d(0, 0, 0);
+  transition: all 600ms;
+  animation-name: autoplay;
+  animation-duration: 6.5s;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.item-slide{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 0;
+  max-width: 100%;
+}
+
+</style>
+
+    
+</head>
+<body>
+    <div id="all" class="slideswitch"></div>
+    <div id="poojai" class="slideswitch"></div>
+    <div id="gift" class="slideswitch"></div>
+    <div id="food" class="slideswitch"></div>
+    <div id="stat" class="slideswitch"></div>
+
+
+    <div class="pagination">
+        <a href="#all" id="pagination_all">all</a>
+        <a href="#poojai" id="pagination_poojai">poojai</a>
+        <a href="#gift" id="pagination_gift">gift</a>
+        <a href="#food" id="pagination_food">food</a>
+        <a href="#stat" id="pagination_stat">stat</a>
+    </div>
+    <div class="wrapper">
+        <div id="all" class="section">
+            <div class="container-all">
+
+                <input type="radio" id="1" name="image-slide" hidden/>
+                <input type="radio" id="2" name="image-slide" hidden/>
+                <input type="radio" id="3" name="image-slide" hidden/>
+          
+                <div class="slide">
+          
+                    <div class="item-slide">
+                        <img src="Images/img1.jpg">
+                    </div>
+          
+                    <div class="item-slide">
+                        <img src="Images/img2.jpg">
+                    </div>
+          
+                    <div class="item-slide">
+                        <img src="Images/img3.jpg">
+                    </div>
+          
+                </div>
+        </div>
+        <div id="poojai" class="section">
+            <div class="container-all">
+
+                <input type="radio" id="1" name="image-slide" hidden/>
+                <input type="radio" id="2" name="image-slide" hidden/>
+                <input type="radio" id="3" name="image-slide" hidden/>
+          
+                <div class="slide">
+          
+                    <div class="item-slide">
+                        <img src="Images/img1.jpg">
+                    </div>
+          
+                    <div class="item-slide">
+                        <img src="Images/img2.jpg">
+                    </div>
+          
+                    <div class="item-slide">
+                        <img src="Images/img3.jpg">
+                    </div>
+          
+                </div>
+        </div>
+        <div id="gift" class="section">
+            <div class="container-all">
+
+                <input type="radio" id="1" name="image-slide" hidden/>
+                <input type="radio" id="2" name="image-slide" hidden/>
+                <input type="radio" id="3" name="image-slide" hidden/>
+          
+                <div class="slide">
+          
+                    <div class="item-slide">
+                        <img src="Images/img1.jpg">
+                    </div>
+          
+                    <div class="item-slide">
+                        <img src="Images/img2.jpg">
+                    </div>
+          
+                    <div class="item-slide">
+                        <img src="Images/img3.jpg">
+                    </div>
+          
+                </div>
+        </div>
+        <div id="food" class="section">
+            <div class="container-all">
+
+                <input type="radio" id="1" name="image-slide" hidden/>
+                <input type="radio" id="2" name="image-slide" hidden/>
+                <input type="radio" id="3" name="image-slide" hidden/>
+          
+                <div class="slide">
+          
+                    <div class="item-slide">
+                        <img src="Images/img1.jpg">
+                    </div>
+          
+                    <div class="item-slide">
+                        <img src="Images/img2.jpg">
+                    </div>
+          
+                    <div class="item-slide">
+                        <img src="Images/img3.jpg">
+                    </div>
+          
+                </div>
+        </div>
+        <div id="stat" class="section">
+            <div class="container-all">
+
+                <input type="radio" id="1" name="image-slide" hidden/>
+                <input type="radio" id="2" name="image-slide" hidden/>
+                <input type="radio" id="3" name="image-slide" hidden/>
+          
+                <div class="slide">
+          
+                    <div class="item-slide">
+                        <img src="Images/img1.jpg">
+                    </div>
+          
+                    <div class="item-slide">
+                        <img src="Images/img2.jpg">
+                    </div>
+          
+                    <div class="item-slide">
+                        <img src="Images/img3.jpg">
+                    </div>
+          
+                </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>contact</title>
+</head>
+<body>
+  <section>
+    <div class="header">
+        <h2 class="logo">kalyaan</h2>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-btn">
+          <i class="fas fa-ellipsis-h"></i>
+        </label>
+    
+        <ul class="menu">
+          <a href="index.html">Home</a>
+          <a href="product.html">product</a>
+          <a href="about.html">about us</a>
+        
+          <a href="conact.html">Contact</a>
+          <a href="contact.css">admin login</a>
+
+          <label for="chk" class="hide-menu-btn">
+            <i class="fas fa-times"></i>
+          </label>
+        </ul>
+      </div>
+</section>
+ <!----
+    <section>
+        <div class="container">
+            <div class="wrapper">
+              <form class="form">
+                <span class="title">Get in touch.</span>
+        
+                <div class="inline-row">
+                  <div class="input">
+                    <label>Your Name</label>
+                    <input type="text" placeholder="Enter your name">
+                    <span class="line"></span>
+                  </div>
+        
+                  <div class="input">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email address">
+                    <span class="line"></span>
+                  </div>
+                </div>
+        
+                <div class="input">
+                  <label>Message</label>
+                  <textarea placeholder="Your message here..."></textarea>
+                  <span class="line"></span>
+                </div>
+        
+                <div class="submit-btn">
+                  <span>Send</span>
+                </div>
+              </form>
+            </div>
+          </div>
+        
+
+    </section>
+    ----->
+    <section id="wrappe">
+        <div class="wrappeR">
+            <h1>Contact Us Page</h1>
+            <p>Reach out us, We are waiting to interact with you.</p>
+            <div class="contactus">
+              <div class="input_wrapper input_wrapper_top">
+                <div class=	
+          "input_item">
+                  <input type="text" placeholder=" Name">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div class="input_item">
+                  <input type="text" placeholder=" Email">
+                  <i class="fas fa-at"></i>
+                </div>
+              </div>
+              <div class="input_wrapper input_wrapper_bottom">
+                <div class="input_item">
+                  <input type="text" placeholder=" Subject">
+                  <i class="fas fa-sticky-note"></i>
+                </div>
+                <div class="input_item">
+                  <input type="text" placeholder=" Phone">
+                  <i class="fas fa-phone"></i>
+                </div>
+              </div>
+              <div class="message_wrapper">
+                <textarea placeholder=" Message"></textarea>
+                <i class="fas fa-envelope-open"></i>
+              </div>
+              <div class="btn"><a href="#">send</a></div>
+            </div>
+          </div>
+          
+    </section>
+    <section class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.869668843372!2d101.68255321444676!3d3.129135054148738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49eb2f53c175%3A0x7cf3952039683df5!2sKalyaan%20Traders%20PLT.!5e0!3m2!1sta!2smy!4v1571708274106!5m2!1sta!2smy" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="">
+      </iframe>
+    </section>
+ 
+  <script>
+  $(document).ready(function(){
+    var bottom=$("header").outerHeight();
+    var header=$("header").offset().top + bottom;
+    $(window).scroll(function(){
+      if($(window).width()>991){
+        if($(window).scrollTop()>=header){
+          $("header").addClass("sticky")
+        }
+        else{
+          $("header").removeClass("sticky")
+        }
+      }
+    })
+$(".navbar ul li a").click(function(){
+  $(".navbar ul li a").removeClass("active")
+  $(this).addClass("active");
+})
+$(".ham-burger").click(function(){
+  $(this).toggleClass("active")
+  $(".navbar").toggleClass("open")
+})
+
+
+  })
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </script>
+   
+</body>
+
+<section id="footer">
+  <footer class="footer">
+    <div class="footer-left col-md-4 col-sm-6">
+        <h2> kalyaan traders plt </h2> 
+        <p class="about"><span>  
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.869668843372!2d101.68255321444676!3d3.129135054148738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49eb2f53c175%3A0x7cf3952039683df5!2sKalyaan%20Traders%20PLT.!5e0!3m2!1sta!2smy!4v1571708274106!5m2!1sta!2smy" width="300" height="150" frameborder="0" style="border:0;" allowfullscreen="">
+        </iframe></span>
+      </p>
+      <div class="icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        
+        <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-center col-md-4 col-sm-6">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span> 7, Lorong Chan Ah Tong, Brickfields,<br> 50470 Kuala Lumpur, </span> Wilayah Persekutuan Kuala Lumpur</p>
+      </div>
+      <div>
+      <i class="fas fa-phone"></i>
+        <p> 03-2276 2211</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="#"> Yourmailid@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-right col-md-4 col-sm-6">
+    
+      <p class="menu">
+         <a href="index.html">Home</a>
+                <a href="product.html">product</a>
+                <a href="about.html">about us</a>
+              
+                <a href="conact.html">Contact</a>
+                <a href="#">admin login</a>
+  
+      </p>
+    
+    </div>
+  </footer>
+</section>
+</html>
